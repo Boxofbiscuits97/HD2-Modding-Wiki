@@ -26,7 +26,7 @@ npm ci
 ```
 
 > [!NOTE]
-> If you encounter any errors with npm, it is likely because you do not have nodejs installed
+> If you encounter any errors with npm, it is likely because you do not have nodejs installed.
 > [Install Nodejs Here](https://nodejs.org/)
 
 Run a preview of the wiki locally:
