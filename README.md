@@ -39,5 +39,6 @@ Once your changes have been made, you can create a pull request in the Source Co
 ## Helpful Guidelines for Contributing
 [Vitepress Writing Guide](https://vitepress.dev/guide/markdown)
 
+- All guides are markdown (`.md`) files placed in the `/docs/` folder.
 - Properly Organize your guides into proper folders. Try not to nest too many folders.
 - Keep all of your image content in the `/docs/.vitepress/public/images/` folder. You can create a sub folder in this directory for *each* page you write.
