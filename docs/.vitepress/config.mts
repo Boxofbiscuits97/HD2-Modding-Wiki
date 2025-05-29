@@ -16,9 +16,21 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Setup',
+        text: `Users`,
+        items: [
+          { text: 'Getting Started', link: `/player-overview`}
+        ]
+      },
+      {
+        text: 'Developers',
         items: [
           { text: 'Getting Started', link: '/overview' }
+        ]
+      },
+      {
+        text: "Other",
+        items: [
+          { text: `FAQ`, link: `/faq`}
         ]
       }
     ],

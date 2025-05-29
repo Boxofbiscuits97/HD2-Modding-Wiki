@@ -55,7 +55,7 @@ Not recommended as there are better ways to generate textures better but by far 
 
 
 
-# Installing Blender Plugins
+## Installing Blender Plugins
 
 You now need to install the Blender Addons you have downloaded to Blender.
 
