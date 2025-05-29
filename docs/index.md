@@ -14,11 +14,14 @@ hero:
       link: https://github.com/Boxofbiscuits97/HD2-Modding-Wiki
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Installing Mods
+    details: Learn how to install mods for Helldivers 2!
+    link: ./player-overview
+  - title: Developing Mods
+    details: Learn how to make your own mods for Helldivers 2!
+    link: ./overview
+  - title: FAQ
+    details: Find answers for common questions!
+    link: ./faq
 ---
 
