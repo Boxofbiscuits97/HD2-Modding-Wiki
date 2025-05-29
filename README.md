@@ -17,14 +17,21 @@ Go to the site [Here](https://boxofbiscuits97.github.io/HD2-Modding-Wiki/)
 Now that your fork is setup, you can start developing.
 [Vitepress General Guide](https://vitepress.dev/guide/getting-started)
 
+You will have to run these next commands in the terminal to get things going.
+To open the terminal go to `View > Terminal` in the file bar at the top of the window.
+
 To install dependencies:
 ```shell
 npm ci
 ```
 
+> [!NOTE]
+> If you encounter any errors with npm, it is likely because you do not have nodejs installed/
+> [Install Nodejs Here](https://nodejs.org/)
+
 Run a preview of the wiki locally:
 ```shell
-npm run dev
+npm run docs:dev
 ```
 
 Once your changes have been made, you can create a pull request in the Source Control Tab.
