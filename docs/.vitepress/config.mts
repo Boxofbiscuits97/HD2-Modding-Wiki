@@ -5,7 +5,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
-  base: "/repo/",
+  base: "/HD2-Modding-Wiki/",
   title: "Helldivers 2 Modding Wiki",
   description: "The Modding Wiki For Helldivers 2",
   themeConfig: {
