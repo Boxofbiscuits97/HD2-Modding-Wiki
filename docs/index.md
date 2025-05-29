@@ -10,8 +10,8 @@ hero:
       text: Getting Started
       link: /overview
     - theme: alt
-      text: Edit on Github
-      link: https://github.com/Boxofbiscuits97/HD2-Modding-Wiki
+      text: Contribute on Github
+      link: https://github.com/Boxofbiscuits97/HD2-Modding-Wiki?tab=readme-ov-file#contributing-to-the-site
 
 features:
   - title: Installing Mods
