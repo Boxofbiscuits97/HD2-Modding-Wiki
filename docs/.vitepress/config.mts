@@ -46,6 +46,16 @@ export default defineConfig({
             items: [
               
             ]
+          },
+          {
+            text: 'Audio Modding',
+            collapsed: true,
+            link: '/audio/general',
+            items: [
+              {text: 'Music', link: '/audio/music'},
+              {text: 'Voicelines', link: '/audio/voicelines'},
+              {text: 'SFX', link: '/audio/sfx'}
+            ]
           }
         ]
       },
