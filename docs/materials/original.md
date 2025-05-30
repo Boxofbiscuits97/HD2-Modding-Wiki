@@ -1,3 +1,9 @@
+---
+prev: true
+next: true
+description: The Original Material Preset.
+---
+
 # Original
 Comes with 13 textures of which 6 you will need to replace.
 

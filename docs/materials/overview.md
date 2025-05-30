@@ -1,7 +1,7 @@
 ---
 prev: true
 next: true
-description: The basics of materials and textures in Helldivers 2 Modding.
+description: The basics of materials in Helldivers 2 Modding.
 ---
 
 # Materials

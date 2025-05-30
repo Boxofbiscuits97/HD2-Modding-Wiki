@@ -1,3 +1,9 @@
+---
+prev: true
+next: true
+description: The Alpha Clip Material Preset.
+---
+
 # Alpha Clip
 Comes with 3 nodes that will you need to replace.
 

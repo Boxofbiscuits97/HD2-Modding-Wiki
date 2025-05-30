@@ -1,3 +1,9 @@
+---
+prev: true
+next: true
+description: The Translucent Material Preset.
+---
+
 # Translucent
 Comes with a single node you do not need to replace. 
 

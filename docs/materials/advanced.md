@@ -1,3 +1,9 @@
+---
+prev: true
+next: true
+description: The Advanced Material Preset.
+---
+
 # Advanced
 
 Comes with 3 nodes that will you need to replace.

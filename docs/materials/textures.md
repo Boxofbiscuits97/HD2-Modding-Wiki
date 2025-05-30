@@ -1,3 +1,8 @@
+---
+prev: true
+next: true
+description: The basics of textures in Helldivers 2 Modding.
+---
 
 # Textures
 

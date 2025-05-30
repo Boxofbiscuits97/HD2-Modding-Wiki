@@ -1,3 +1,9 @@
+---
+prev: true
+next: true
+description: The Basic Material Preset.
+---
+
 # Basic/Basic+
 Comes with 3 nodes that will you need to replace.
 
