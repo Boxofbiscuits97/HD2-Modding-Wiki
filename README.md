@@ -37,7 +37,9 @@ Once your changes have been made, you can create a pull request in the Source Co
 
 ## Helpful Guidelines for Contributing
 [Vitepress Writing Guide](https://vitepress.dev/guide/markdown)
+
 [Basic Markdown Tutorial](https://www.markdowntutorial.com/)
+
 [Github Markdown Tutorial](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 - All guides are markdown (`.md`) files placed in the `/docs/` folder.
