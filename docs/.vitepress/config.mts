@@ -24,7 +24,29 @@ export default defineConfig({
       {
         text: 'Developers',
         items: [
-          { text: 'Getting Started', link: '/overview' }
+          { text: 'Getting Started', link: '/overview' },
+          { text: 'Textures', link: '/materials/textures'},
+          { 
+            text: 'Materials', 
+            collapsed: true,
+            link: '/materials/overview',
+            items: [
+              {text: 'Advanced', link: '/materials/advanced'},
+              {text: 'Basic+', link: '/materials/basic'},
+              {text: 'Translucent', link: '/materials/translucent'},
+              {text: 'Alpha Clip', link: '/materials/alphaclip'},
+              {text: 'Original', link: '/materials/original'},
+              {text: 'Emissive', link: '/materials/emissive'}
+            ]
+          },
+          {
+            text: 'LUT Modding',
+            collapsed: true,
+            link: '/lut/overview',
+            items: [
+              
+            ]
+          }
         ]
       },
       {
@@ -36,7 +58,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Boxofbiscuits97/HD2-Modding-Wiki' }
     ]
   }
 })
