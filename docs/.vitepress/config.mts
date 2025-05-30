@@ -8,6 +8,7 @@ export default defineConfig({
   base: "/HD2-Modding-Wiki/",
   title: "Helldivers 2 Modding Wiki",
   description: "The Modding Wiki For Helldivers 2",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -59,6 +60,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Boxofbiscuits97/HD2-Modding-Wiki' }
-    ]
+    ],
+
+    editLink: {
+      pattern: 'https://github.com/Boxofbiscuits97/HD2-Modding-Wiki/edit/main/docs/:path',
+      text: "Edit this page on GitHub"
+    }
   }
 })
