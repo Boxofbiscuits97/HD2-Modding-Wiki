@@ -50,7 +50,7 @@ export default defineConfig({
           {
             text: 'Audio Modding',
             collapsed: true,
-            link: '/audio/general',
+            link: '/audio/overview',
             items: [
               {text: 'Music', link: '/audio/music'},
               {text: 'Voicelines', link: '/audio/voicelines'},
