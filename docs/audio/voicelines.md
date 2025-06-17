@@ -8,3 +8,5 @@ next:
     description: Specified guides on modding voicelines.
 ---
 <font color="#FFF000">// Intended for Voice Line Specific Walkthroughs</font>
+
+[JOIN THE HELLDIVERS 2 MODDING DISCORD](https://discord.gg/helldiversmodding)
