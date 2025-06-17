@@ -11,3 +11,5 @@ description: Specified guides on modding sfx.
 
 
 <font color="#FFF000">// Intended for SFX Specific Walkthroughs</font>
+
+[JOIN THE HELLDIVERS 2 MODDING DISCORD](https://discord.gg/helldiversmodding)
