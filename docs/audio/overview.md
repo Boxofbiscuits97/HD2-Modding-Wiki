@@ -141,7 +141,7 @@ Then left-click `Select Folder` on the bottom right of that window.
 Now that we have everything set up it's time to get familiar with how the tool works.
 
 The first step in every Audio Modding Project is to click `View -> Hierarchy`
-![Paste URL](..\public\images\audio-general\heirarchy.png)
+![Paste URL](..\public\images\audio-general\Heirarchy.png)
 This switches the program from the "wem only" `Sources View` to a view that shows `Segments`, `Tracks`, `Wems`, and more.
 
 ### Tool Overview
