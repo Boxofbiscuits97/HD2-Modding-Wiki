@@ -25,6 +25,8 @@ The following archives contain all known music in the game.
 - Flag Raise (Terminid & Automaton) : `04f60fc9a8eec97d`
 - Flag Raise (Illuminate) : `ac1950d1411393f2`
 
+When you make a patch using Audio Mod Tool 1.17.5 or newer, your patch will generate a single `9ba626afa44a3aa3.patch_0` instead of seperate patch files for each archive. This does NOT mean you load the `9ba626afa44a3aa3` at any point while making music mods.
+
 ## Specific Guides
 Below you can find numerous information hubs on how to do a complete specific music mods. 
 
