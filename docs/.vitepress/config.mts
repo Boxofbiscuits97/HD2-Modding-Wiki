@@ -60,6 +60,14 @@ export default defineConfig({
               {text: 'Voicelines', link: '/audio/voicelines'},
               {text: 'SFX', link: '/audio/sfx'}
             ]
+          },
+          {
+            text: 'Text Modding',
+            collapsed: true,
+            link: '/text/overview',
+            items: [
+
+            ]
           }
         ]
       },
