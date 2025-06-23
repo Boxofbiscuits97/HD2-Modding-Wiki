@@ -49,7 +49,7 @@ export default defineConfig({
             ]
           },
           {
-            text: 'Audio Modding',
+            text: 'Audio',
             collapsed: true,
             link: '/audio/overview',
             items: [
@@ -60,11 +60,17 @@ export default defineConfig({
               {text: 'Voicelines', link: '/audio/voicelines'},
               {text: 'SFX', link: '/audio/sfx'}
             ]
-          },
-          {
-            text: 'Text Modding',
+          },{
+            text: 'Text',
             collapsed: true,
             link: '/text/overview',
+            items: [
+
+            ]
+          },{
+            text: 'Capes',
+            collapsed: true,
+            link: '/cape/overview',
             items: [
 
             ]
