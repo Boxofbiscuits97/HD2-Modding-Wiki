@@ -40,6 +40,12 @@ Load the `9ba626afa44a3aa3` archive.
 
 This archive contains the majority of the game's text, but not all of it.
 
+After that, make sure to select the language you want to edit by clicking `Options` -> `Game Text Language` -> `Select Language`. Keep in mind that there are two different English Text Options. Each of these are seperate instances and will need changed individually as you deem necessary.
+
+![Paste URL](..\public\images\text-general\selectlanguage.png)
+
+---
+
 You can tell subtitles from text boxes by the use of timestamps.
 > EXAMPLE OF A SUBTITLE
 ![Paste URL](..\public\images\text-general\subtitle-example.png)
