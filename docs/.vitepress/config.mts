@@ -72,7 +72,9 @@ export default defineConfig({
             collapsed: true,
             link: '/cape/overview',
             items: [
-
+              {text: 'Beginners Course', link: '/cape/beginnersguide'},
+              {text: 'Intermediate Course', link: '/cape/intermediateguide'},
+              {text: 'Advanced Course', link: '/cape/advancedguide'}
             ]
           }
         ]
