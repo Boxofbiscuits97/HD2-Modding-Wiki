@@ -25,7 +25,25 @@ export default defineConfig({
       {
         text: 'Developers',
         items: [
+          {
+            text: 'Game Development',
+            collapsed: true,
+            link: '/game development/overview',
+            items: [
+              {text: 'Terms', link: '/game development/terms'},
+            ]
+          },
           { text: 'Getting Started', link: '/overview' },
+          {
+            text: 'Source Development Kit',
+            collapsed: true,
+            link: '/sdk functions/overview',
+            items: [
+              {text: 'Settings', link: '/sdk functions/settings'},
+              {text: 'Special Tools', link: '/sdk functions/special-tools'},
+              {text: 'Functions', link: '/sdk functions/functions'}
+            ]
+          },
           { text: 'Textures', link: '/materials/textures'},
           { 
             text: 'Materials', 
