@@ -26,7 +26,7 @@ The main modding tool for Helldivers 2 in the form of a Blender addon.
 #### [GIMP](https://www.gimp.org/)
 Or your image editor of choice. For the [Beginner guide](./beginnersguide) we'll be using GIMP.
 
-For further instruction on getting those set up please see [Getting Started](../overview/#installing-blender-plugins)
+For further instruction on getting those set up please see [Getting Started](../overview#installing-blender-plugins)
 
 ## Other Resources
 
