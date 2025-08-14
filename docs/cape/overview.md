@@ -24,7 +24,7 @@ Any version from 4.0 to 4.3 will suffice but versions beyond WILL NOT WORK.
 The main modding tool for Helldivers 2 in the form of a Blender addon.
 
 #### [GIMP](https://www.gimp.org/)
-Or your image editor of choice. For the [Beginner guide](#beginners-course) we'll be using GIMP.
+Or your image editor of choice. For the [Beginner guide](./beginnersguide) we'll be using GIMP.
 
 For further instruction on getting those set up please see [Getting Started](../overview/#installing-blender-plugins)
 
@@ -38,11 +38,11 @@ Has the archive listing, file names, and shared asset markings for every known c
 
 ## Cape Modding Courses
 
-#### [Beginner's Course](./beginnersguide.md)
+#### [Beginner's Course](./beginnersguide)
 If you've never made a mod, this course is for you.
 
-#### [Intermediate Course](./intermediateguide.md)
+#### [Intermediate Course](./intermediateguide)
 If you've made a few mods before but never modded capes, you're the target demographic here.
 
-#### [Advanced Guide](./advancedguide.md)
+#### [Advanced Guide](./advancedguide)
 For those who've already mad numerous cape mods, but want to learn the deepest secrets of the craft.
