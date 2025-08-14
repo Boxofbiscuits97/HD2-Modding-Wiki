@@ -53,10 +53,15 @@ export default defineConfig({
             collapsed: true,
             link: '/audio/overview',
             items: [
-              {text: 'Music', link: '/audio/music', collapsed: true, items: [
-                {text: 'Mission Music', link: '/audio/missionmusic'},
-                {text: 'Troubleshooting', link: '/audio/troubleshooting'}
-                ]},
+              {
+                text: 'Music', 
+                link: '/audio/music', 
+                collapsed: true, 
+                items: [
+                  {text: 'Mission Music', link: '/audio/missionmusic'},
+                  {text: 'Troubleshooting', link: '/audio/troubleshooting'}
+                ]
+              },
               {text: 'Voicelines', link: '/audio/voicelines'},
               {text: 'SFX', link: '/audio/sfx'}
             ]
