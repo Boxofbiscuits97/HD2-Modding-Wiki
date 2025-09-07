@@ -44,7 +44,15 @@ export default defineConfig({
               {text: 'Functions', link: '/sdk functions/functions'}
             ]
           },
-          { text: 'Textures', link: '/materials/textures'},
+          { 
+            text: 'Textures', 
+            collapsed: true,
+            link: '/textures/overview',
+            items: [
+              {text: 'Texture Baking', link: '/textures/texture-baking'},
+              {text: 'Texture Atlas', link: '/textures/texture-atlas'}
+            ]
+          },
           { 
             text: 'Materials', 
             collapsed: true,
@@ -55,7 +63,18 @@ export default defineConfig({
               {text: 'Translucent', link: '/materials/translucent'},
               {text: 'Alpha Clip', link: '/materials/alphaclip'},
               {text: 'Original', link: '/materials/original'},
-              {text: 'Emissive', link: '/materials/emissive'}
+              {text: 'Emissive', link: '/materials/emissive'},
+              {text: 'Material Slot Order', link: '/materials/material-slot-order'},
+              {text: 'Extra Material', link: '/materials/extra-material'}
+            ]
+          },
+          { 
+            text: 'Armor Modding', 
+            collapsed: true,
+            link: '/armor modding/overview',
+            items: [
+              {text: 'HD2 Armor Anatomy', link: '/armor modding/anatomy'},
+              {text: 'HD2 Body Parts', link: '/armor modding/body-parts'}
             ]
           },
           {

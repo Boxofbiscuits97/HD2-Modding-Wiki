@@ -6,9 +6,13 @@ These are functions used through the SDK Modding Menu.
 
 ### Discord
 
+![discord-preview](../public/images/sdk-functions/discord.png)
+
 A direct link to the HD2 Community Modding Discord.
 
 ### Archive IDs
+
+![archive-ids-preview](../public/images/sdk-functions/archive-ids.png)
 
 A direct link to the spreadsheet listing the archives for currently found game assets.
 
@@ -16,12 +20,17 @@ A direct link to the spreadsheet listing the archives for currently found game a
 
 ![github-preview](../public/images/sdk-functions/github.png)
 
+GitHub to the HD2 SDK releases.
 
 ### Star Icon
+
+![star-icon-preview](../public/images/sdk-functions/star-icon.png)
 
 Loads the base game archive `9ba626afa44a3aa3` into the SDK.
 
 ### Search Found Archives
+
+![search-found-archives-preview](../public/images/sdk-functions/search-found-archives.png)
 
 Find and load the archive for the object input into the search bar.
 
@@ -35,6 +44,8 @@ Unloads all patches currently loaded in the SDK, including the `base archive`.
 
 ### Archives
 
+![archives-preview](../public/images/sdk-functions/archives.png)
+
 Foldout menu displaying all archives currently loaded in the SDK.
 
 ### Manually Load Archives
@@ -45,13 +56,19 @@ Search the `data` folder for an archive to load into the SDK.
 
 ### New Patch
 
+![new-patch-preview](../public/images/sdk-functions/new-patch.png)
+
 Makes a new patch in the SDK. Will automatically load the `base archive` if it has not been loaded yet.
 
-### Create Patch
+### Write Patch
+
+![write-patch-preview](../public/images/sdk-functions/write-patch.png)
 
 Creates a patch set in the `data` folder from the current modified objects in the SDK.
 
 ### Export Patch
+
+![export-patch-preview](../public/images/sdk-functions/export-patch.png)
 
 Exports the patch set to a specified location as a `.zip` file.
 
