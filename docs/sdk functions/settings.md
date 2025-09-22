@@ -86,6 +86,16 @@ Will remove the gore `meshes` from any imported HD2 armor sets.
 At this current time, any modded armor that changes the mesh in any way will break the base game gibs. It is highly recommended to leave this setting on for newer modders as it will reduce the amount of headaches during the modding process.
 :::
 
+### Parent Armatures
+
+When importing a `mesh` and `armature`, will parent the `mesh` to the `armature`.
+
+![Parent Armature Preview](../public/images/sdk-settings/parent-armature.png)
+
+### Import Armature
+
+Choose whether or not to import the `armature` of a `mesh`.
+
 ## Export Options
 
 ### Force 3 UV Sets
@@ -120,6 +130,22 @@ Takes the saved `mesh` and applies it to all `LODs` of the saved `mesh` ID.
 
 If you are modding an item that requires you to modify each individual `LOD` of the `mesh`, turn this setting off.
 
+### Save Bone Positions
+
+### Save Textures with Material
+
+When saving any `material`, choose whether or not to also save the coresponding `textures` to the patch.
+
+### Generate Randon Texture IDs
+
+If the previous option is also enabled, saved `textures` will have new, randomly generated, unique IDs. Unique IDs are required to prevent `textures` from overriding each other because they have the same ID.
+
+### Save only Custom Textures
+
+When `textures` are saved to patch, choose to only save `textures` that you are inputting and not base game `textures`.
+
+![Custom Textures Preview](../public/images/sdk-settings/custom-textures-edit.png)
+
 ## Other Options
 
 ### Save Non-SDK Materials
@@ -143,6 +169,14 @@ If you plan on having separate `patch files` for `textures` and `meshes` this is
 Automatically makes and `patch file` write to archive `9ba626afa44a3aa3`.
 
 There is no real reason to turn this off so keep enabled.
+
+### Legacy Weight Names
+
+When importing `units` or saving `units`, choose whether or not to use the old system (0_1) or the new standard system (named bones). This is for creators who have made content prior to SDK 3.0 release and have not updated their `units` to use the standard system.
+
+### Merge Armatures
+
+When importing multiple `units`, choose whether or not to merge all the armatures into a single armature. Primarily used for armor sets.
 
 ### Data Location
 

@@ -140,7 +140,8 @@ These are functions used when right clicking an object in the SDK or in the Blen
     Copy ID - Copies the Numerical ID of the selected object
     Copy HD2 Properties - Copies all the HD2 properties attached to the selected object
     Paste HD2 Properties - Pasted previously copied HD2 properties to the selected object
-    Save Meshes - Saves selected objects to current patch
+    Save Animation - Saves selected animations from select armatures
+    Save Units - Saves selected objects to current patch
 
 ### Right Click Object in SDK Menu
 

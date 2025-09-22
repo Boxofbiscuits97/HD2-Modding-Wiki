@@ -64,8 +64,8 @@ export default defineConfig({
               {text: 'Alpha Clip', link: '/materials/alphaclip'},
               {text: 'Original', link: '/materials/original'},
               {text: 'Emissive', link: '/materials/emissive'},
-              {text: 'Material Slot Order', link: '/materials/material-slot-order'},
-              {text: 'Extra Material', link: '/materials/extra-material'}
+              {text: '(Legacy) Material Slot Order', link: '/materials/material-slot-order'},
+              {text: '(Legacy) Extra Material', link: '/materials/extra-material'}
             ]
           },
           { 
@@ -73,8 +73,16 @@ export default defineConfig({
             collapsed: true,
             link: '/armor modding/overview',
             items: [
-              {text: 'HD2 Armor Anatomy', link: '/armor modding/anatomy'},
+              {text: '(Legacy) HD2 Armor Anatomy', link: '/armor modding/anatomy'},
               {text: 'HD2 Body Parts', link: '/armor modding/body-parts'}
+            ]
+          },
+          { 
+            text: 'Weapon Modding', 
+            collapsed: true,
+            link: '/weapon modding/overview',
+            items: [
+              {text: 'Weapon Replacement', link: '/weapon modding/weapon-replacement'}
             ]
           },
           {
