@@ -10,6 +10,18 @@ Materials are what is actually applied to your model so that you textures can di
 
 Most material presets do not translate transparency but some do have transparency in different forms.
 
+::: warning
+Material amount be <u>**equal**</u> to the amount of materials on the object you are replacing if it is a `LOD`, even if you do not use all said materials.
+
+For example, the SR-24 Brawny Arm Right part has 2 materials. You must have 2 materials on your modded arm part as well.
+
+You cannot go over the material amount of the base game or else you will <u>**instantly crash**</u> the game on start-up.
+
+There are very specific cases where you can add materials to an object, but this is rare and only really applictable to weapons and props. Please refer to [this](./extra-material) section to learn more about adding extra materials to an object.
+
+View [this](../textures/texture-atlas) section on how to combine texture sets into a single `texture atlas` so that you can adhere to the object's material constraints.
+:::
+
 ## Material Presets
 There are a variety of different presets you can use. Each one has its own pros and cons.
 

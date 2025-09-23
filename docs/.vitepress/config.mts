@@ -25,8 +25,34 @@ export default defineConfig({
       {
         text: 'Developers',
         items: [
+          {
+            text: 'Game Development',
+            collapsed: true,
+            link: '/game development/overview',
+            items: [
+              {text: 'Terms', link: '/game development/terms'},
+            ]
+          },
           { text: 'Getting Started', link: '/overview' },
-          { text: 'Textures', link: '/materials/textures'},
+          {
+            text: 'Source Development Kit',
+            collapsed: true,
+            link: '/sdk functions/overview',
+            items: [
+              {text: 'Settings', link: '/sdk functions/settings'},
+              {text: 'Special Tools', link: '/sdk functions/special-tools'},
+              {text: 'Functions', link: '/sdk functions/functions'}
+            ]
+          },
+          { 
+            text: 'Textures', 
+            collapsed: true,
+            link: '/textures/overview',
+            items: [
+              {text: 'Texture Baking', link: '/textures/texture-baking'},
+              {text: 'Texture Atlas', link: '/textures/texture-atlas'}
+            ]
+          },
           { 
             text: 'Materials', 
             collapsed: true,
@@ -37,7 +63,26 @@ export default defineConfig({
               {text: 'Translucent', link: '/materials/translucent'},
               {text: 'Alpha Clip', link: '/materials/alphaclip'},
               {text: 'Original', link: '/materials/original'},
-              {text: 'Emissive', link: '/materials/emissive'}
+              {text: 'Emissive', link: '/materials/emissive'},
+              {text: '(Legacy) Material Slot Order', link: '/materials/material-slot-order'},
+              {text: '(Legacy) Extra Material', link: '/materials/extra-material'}
+            ]
+          },
+          { 
+            text: 'Armor Modding', 
+            collapsed: true,
+            link: '/armor modding/overview',
+            items: [
+              {text: '(Legacy) HD2 Armor Anatomy', link: '/armor modding/anatomy'},
+              {text: 'HD2 Body Parts', link: '/armor modding/body-parts'}
+            ]
+          },
+          { 
+            text: 'Weapon Modding', 
+            collapsed: true,
+            link: '/weapon modding/overview',
+            items: [
+              {text: 'Weapon Replacement', link: '/weapon modding/weapon-replacement'}
             ]
           },
           {
