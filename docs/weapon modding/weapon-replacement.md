@@ -6,6 +6,33 @@ description: Weapon Replacement.
 
 # Weapon Replacement
 
+## Setup
+
+Upon launcher Blender and having the SDK installed, you will need to do some basic setup.
+
+    Load the base game archive by clicking the star icon
+    Hit New Patch
+
+![Setup](../public/images/weapon-modding/setup.gif)
+
+This will need to be done everytime you open Blender up again.
+
+## Import Unit to Replace
+
+Use the `Search Found Archives` section to search for the archive of the item you wish to mod to add it to the currently loaded archives. If the item cannot be found, use the [spreadsheet](https://docs.google.com/spreadsheets/d/1oQys_OI5DWou4GeRE3mW56j7BIi4M7KftBIPAl1ULFw/edit?usp=sharing).
+
+![Import1](../public/images/weapon-modding/import1.gif)
+
+With the archive selected, click on the `Import` icon next to the `unit` you want to modify. You can open/close the foldouts of sections.
+
+![Import2](../public/images/weapon-modding/import2.gif)
+
+Certain `units` may need different settings to properly import into Blender. Some objects are only static meshes and will require the `Import Static Meshes` setting to be enabled.
+
+![Import3](../public/images/weapon-modding/import3.png)
+
+There also may be cases where some `units` require all `LODs` to be modified in order for it to work properly. Visit [this](weapon-replacement-lods) section on how to properly modify Non-AutoLOD `units`
+
 ## Alignment
 
 Import the weapon you want to replace and the weapon you wish to replace it with. This example will be replacing the AR-61 Tenderizer with a EFT AUG A3.
@@ -172,7 +199,7 @@ Repeat until you get the magazine into the correct spot.
 
 ![Mag4](../public/images/weapon-modding/mag4.png)
 
-## Bone Editting
+## Bone Editing
 
 In order to get weapon customization to work with your modded weapon, you will need to do some edits to the `unit armature`.
 
