@@ -16,12 +16,16 @@ Also known as a skeleton or rig, the object that moves the `mesh`.
 Parts of the `armature` that move. Think of like the finger bones or leg bones of your body. `Vertex groups` are used to determine what bone moves what part of the `mesh`.
 
 ### `Mesh`
-
-### `Texture Atlas`
+The geometry and physical body of any given object.
 
 ### `Vertex Group`
+A collection of vertices that are assigned to a specific bone.
 
 ### `LUT`
+Look-Up-Table. This is what HD2 uses to determine the color, roughness, metallic, and emissive textures for certain assets, like armors and weapons.
+
+### `Unit`
+The collective data that that is assigned to an object. For HD2, this is the `Mesh`, `Vertex Groups`, `UVMaps`, and `Armature` for any given ID.
 
 ### `Patch File`
 The modded files packed for usage. Should have `9ba626afa44a3aa3` at the beginning followed by a `.patch`.
@@ -33,5 +37,4 @@ Patch files will have up to three files per set:
     9ba626afa44a3aa3.patch_#.stream
 
 ### Base Archive
-
 Archive `9ba626afa44a3aa3` that all mods are created from and patched to.

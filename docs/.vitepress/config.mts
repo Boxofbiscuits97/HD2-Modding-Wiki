@@ -50,7 +50,7 @@ export default defineConfig({
             link: '/textures/overview',
             items: [
               {text: 'Texture Baking', link: '/textures/texture-baking'},
-              {text: 'Texture Atlas', link: '/textures/texture-atlas'}
+              {text: '(Legacy) Texture Atlas', link: '/textures/texture-atlas'}
             ]
           },
           { 
@@ -73,8 +73,9 @@ export default defineConfig({
             collapsed: true,
             link: '/armor modding/overview',
             items: [
-              {text: '(Legacy) HD2 Armor Anatomy', link: '/armor modding/anatomy'},
-              {text: 'HD2 Body Parts', link: '/armor modding/body-parts'}
+              {text: 'HD2 Armor Anatomy', link: '/armor modding/anatomy'},
+              {text: 'HD2 Body Parts', link: '/armor modding/body-parts'},
+              {text: 'Armor Replacement', link: '/armor modding/armor-replacement'}
             ]
           },
           { 
@@ -82,7 +83,8 @@ export default defineConfig({
             collapsed: true,
             link: '/weapon modding/overview',
             items: [
-              {text: 'Weapon Replacement', link: '/weapon modding/weapon-replacement'}
+              {text: 'Weapon Replacement', link: '/weapon modding/weapon-replacement'},
+              {text: 'Weapon/Equipment Replacement (LODs)', link: '/weapon modding/weapon-replacement-lods'}
             ]
           },
           {
