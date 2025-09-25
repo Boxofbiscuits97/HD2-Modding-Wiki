@@ -73,7 +73,7 @@ export default defineConfig({
             collapsed: true,
             link: '/armor modding/overview',
             items: [
-              {text: '(Legacy) HD2 Armor Anatomy', link: '/armor modding/anatomy'},
+              {text: 'HD2 Armor Anatomy', link: '/armor modding/anatomy'},
               {text: 'HD2 Body Parts', link: '/armor modding/body-parts'},
               {text: 'Armor Replacement', link: '/armor modding/armor-replacement'}
             ]

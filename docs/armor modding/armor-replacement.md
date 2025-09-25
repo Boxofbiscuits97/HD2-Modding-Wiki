@@ -97,7 +97,11 @@ To have your model move in-game, the model will need to have the proper `vertex 
 
  Blender's native transfer weights function or use the [Robust Weight Transfer Plugin](https://jinxxy.com/SentFromSpaceVR/robust-weight-transfer), a better alternative to the native function.
 
-Renaming and mixing vertex groups to from the rig your model comes from to fit the Helldivers 2 rig
+Renaming and mixing vertex groups to from the rig your model comes from to fit the Helldivers 2 rig.
+
+::: warning
+It is highly recommended to not use the shoulder bone of the Helldiver 2 rig. The way it is implemented poorly and will result in tangled arms when using emotes. It is much better to put any upper arm weights onto the shoulder_twist bone. Visit [anatomy](anatomy) to see why.
+:::
 
 <iframe src="https://www.youtube.com/embed/02Ts1yNtVOM" title="Weight Paint" frameborder="0" allowfullscreen></iframe>
 
@@ -119,8 +123,128 @@ Know the difference between a soft body weight and a hard body weight.
 
 ![Weight4](../public/images/armor-modding/weight4.png)
 
-## Materials and Textures
+## Materials/Textures
 
 Use the SDK to generate `materials` for your `mesh` to utilize. Please refer to [this](../materials/overview) section on the types of `material` shaders are available to use.
 
-    In the material foldout section hit the 
+    In the material foldout section hit the + button
+    Choose material template you want to use
+    In your mesh, go the the material tab and replace the material with the SDK material
+    Input the textures required for the material shader
+    Repeat for all materials to be replaced
+
+![Material1](../public/images/armor-modding/material1.gif)
+
+## Copy Properties
+
+For each body part you replace, you need to copy the properties of the `unit` in order for it to be replaced in-game.
+
+::: info
+If you intend to only replace a single body type, make sure to separate the base game asset body parts into their specified body type before proceeding with this step. Visit the [anatomy](anatomy) section if you are confused on what this means
+:::
+
+### Copy Properties through SDK
+
+In this method you will copy the properties of the base game `unit` through the usage of the SDK's copy properties function.
+
+    Select Base Game body part
+    Right click and select Copy HD2 Properties
+    Select your model body part
+    Right click and select Paste HD2 Properties
+    Repeat for all body parts you are replacing
+
+![Properties1](../public/images/armor-modding/properties1.gif)
+
+You will also need to copy the point of origin for the body part as each body part may have a different point of origin than 0,0.
+
+![Properties2](../public/images/armor-modding/properties2-edit.png)
+
+    Select Base Game body part
+    SHIFT + S > Cursor to Select
+    Select your model body part
+    Right click and select Set Origin > Origin to 3D Cursor
+    Repeat for all body parts you are replacing
+
+![Properties3](../public/images/armor-modding/properties3.gif)
+
+### Copy Properties throguh Merging
+
+In this method you will copy the properties of the base game `unit` through merging your mesh to the base game `mesh`.
+
+::: warning
+If you use this option, make sure to rename your UVMap to UVMap instead of whatever your mesh has before joining the objects together. This can sometimes be something like Diffuse UV.
+
+![Property5](../public/images/weapon-modding/property5.png)
+:::
+
+    Select Base Game body part
+    Go to edit mode and delete all vertices
+    Remove all materials
+    Select your model body part
+    CTRL+Select the base game object
+    CTRL+J to join
+
+![Properties4](../public/images/armor-modding/properties4.gif)
+
+Whatever option you choose, do this for all the `units` you are replacing.
+
+## Making Unused Assets Invisible
+
+You may find that you do not need all the body parts of an armor set. In order to not make these parts show up on top of your modded model, you will need to make them invisible.
+
+    Select Base Game body part
+    Go to edit mode
+    Select all with A
+    Press M > Merge at Center
+
+![Invisible1](../public/images/armor-modding/invisible1.gif)
+
+The SDK cannot save a `unit` to have 0 vertices, so you need to save at least 1 vertex. Games cannot render `mesh` faces with less than 3 vertices so by reducing the total vertices to 0, you have effectively made the `mesh` invisible.
+
+## Creating Patch
+
+The model is now ready for in-game testing. For first-time modders, it is recommended to have these setting enabled when saving the `units` you are replacing.
+
+![Patch1](../public/images/armor-modding/patch1.png)
+
+    Hit New Patch to have a fresh patch
+    In your Blend scene, have all body parts you are replacing, including the invisible body parts
+    Select all body parts with A
+    Right Click > Save Units
+    Wait for SDK to process
+    Write Patch
+    Test In-Game
+
+![Patch2](../public/images/armor-modding/patch2.gif)
+
+Continue tweaking your model until it feels good to you.
+
+![Patch3](../public/images/armor-modding/patch3.png)
+
+## Fixing Micro-Seams
+
+Sometimes even when your model is properly weighted, micro seams will appear at your cuts.
+
+![MircoSeam1](../public/images/armor-modding/microseam1.png)
+
+![MircoSeam2](../public/images/armor-modding/microseam2.png)
+
+To fix this you simply just need to extrude your model slightly at the cuts.
+
+    Select mesh
+    Open edit mode and select vertices on the edge of cut
+    Press E to extrude
+    Move extrusion into other body part
+    Scale down to hide extrusion inside
+
+![MircoSeam3](../public/images/armor-modding/microseam3.gif)
+
+This will cause your model's `mesh normals` to get messed up so you will have to use a data transfer modifier to fix it. Go to the `Fixing Cut Seams` section.
+
+![MircoSeam4](../public/images/armor-modding/microseam4.png)
+
+Now the 1-pixel seams are gone
+
+![MircoSeam5](../public/images/armor-modding/microseam5.png)
+
+![MircoSeam6](../public/images/armor-modding/microseam6.png)

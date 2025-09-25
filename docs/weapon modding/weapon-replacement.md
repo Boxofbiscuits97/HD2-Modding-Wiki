@@ -168,11 +168,17 @@ Repeat this for every `unit` you are replacing with a modded mesh.
 
 In this method you will copy the properties of the base game `unit` through merging your mesh to the base game `mesh`.
 
+::: warning
+If you use this option, make sure to rename your UVMap to UVMap instead of whatever your mesh has before joining the objects together. This can sometimes be something like Diffuse UV.
+
+![Property5](../public/images/weapon-modding/property5.png)
+:::
+
     Select the base game mesh
     Delete all vertices
     Remove all materials
     Select your modded mesh
-    CTRL+Select the base game mesh
+    CTRL+Select the base game object
     CTRL+J to join
 
 ![Property4](../public/images/weapon-modding/property4.gif)
