@@ -19,7 +19,19 @@ export default defineConfig({
       {
         text: `Users`,
         items: [
-          { text: 'Getting Started', link: `/player-overview`}
+          { 
+            text: 'Getting Started', 
+            link: `/player-overview`
+          },
+          { 
+            text: 'Mod Managers', 
+            link: `/mod manager/overview`,
+            collapsed: true,
+            items: [
+              {text: 'Arsenal', link: `/mod manager/arsenal`},
+              {text: 'HD2MM', link: `/mod manager/hd2mm`}
+            ]
+          }
         ]
       },
       {
