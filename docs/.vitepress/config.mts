@@ -37,20 +37,11 @@ export default defineConfig({
       {
         text: 'Developers',
         items: [
-          {
-            text: 'Game Development',
+          { text: 'Getting Started',
             collapsed: true,
-            link: '/game development/overview',
+            link: '/overview' ,
             items: [
-              {text: 'Terms', link: '/game development/terms'},
-            ]
-          },
-          { text: 'Getting Started', link: '/overview' },
-          {
-            text: 'Source Development Kit',
-            collapsed: true,
-            link: '/sdk functions/overview',
-            items: [
+              {text: 'Terms', link: '/terms'},
               {text: 'Settings', link: '/sdk functions/settings'},
               {text: 'Special Tools', link: '/sdk functions/special-tools'},
               {text: 'Functions', link: '/sdk functions/functions'}
@@ -100,15 +91,17 @@ export default defineConfig({
             ]
           },
           {
-            text: 'LUT Modding',
+            text: 'Animation Modding',
             collapsed: true,
-            link: '/lut/overview',
+            link: '/animation/overview',
             items: [
-              
+              {text: 'Aligning Magazines', link: '/animation/aligningmagazines'},
+              {text: 'Other Games\' Animations', link : '/animation/othergamesanimations'},
+              {text: 'Rig Editing', link: '/animation/rigediting'}
             ]
           },
           {
-            text: 'Audio',
+            text: 'Audio Modding',
             collapsed: true,
             link: '/audio/overview',
             items: [
@@ -126,7 +119,7 @@ export default defineConfig({
             ]
           },
           {
-            text: 'Text',
+            text: 'Text Modding',
             collapsed: true,
             link: '/text/overview',
             items: [
@@ -134,23 +127,21 @@ export default defineConfig({
             ]
           },
           {
-            text: 'Capes',
+            text: 'LUT Modding',
+            collapsed: true,
+            link: '/lut/overview',
+            items: [
+              
+            ]
+          },
+          {
+            text: 'Cape Modding',
             collapsed: true,
             link: '/cape/overview',
             items: [
               {text: 'Beginners Course', link: '/cape/beginnersguide'},
               {text: 'Intermediate Course', link: '/cape/intermediateguide'},
               {text: 'Advanced Course', link: '/cape/advancedguide'}
-            ]
-          },
-          {
-            text: 'Animation',
-            collapsed: true,
-            link: '/animation/overview',
-            items: [
-              {text: 'Aligning Magazines', link: '/animation/aligningmagazines'},
-              {text: 'Other Games\' Animations', link : '/animation/othergamesanimations'},
-              {text: 'Rig Editing', link: '/animation/rigediting'}
             ]
           }
         ]
