@@ -11,9 +11,9 @@ Materials are what is actually applied to your model so that you textures can di
 Most material presets do not translate transparency but some do have transparency in different forms.
 
 ::: warning
-# Read this section only if you are using Legacy Weights or are using a prior SDK version lower than 3.0
+# If you are using Legacy Weights or are on a version before SDK 3.0
 
-Material amount be <u>**equal**</u> to the amount of materials on the object you are replacing if it is a `LOD`, even if you do not use all said materials.
+Material amount must be <u>**equal**</u> to the amount of materials on the object you are replacing if it is a `LOD`, even if you do not use all said materials.
 
 For example, the SR-24 Brawny Arm Right part has 2 materials. You must have 2 materials on your modded arm part as well.
 
