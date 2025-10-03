@@ -8,7 +8,7 @@ next:
 description: Get started with developing audio mods for Helldivers 2.
 ---
 
-# Getting Started
+# Audio Modding
 Welcome to the beginning of your Audio Modding Adventure! Unlike the other modding sections, modifying audio in Helldivers does not require Blender or the Helldivers SDK.
 
 

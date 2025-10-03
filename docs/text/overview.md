@@ -5,8 +5,8 @@ description: Basic overview of text modding.
 outline: [2, 3]
 ---
 
-# Getting Started
-Unlike the other modding sections, modifying text in Helldivers does not require Blender or the Helldivers SDK.
+# Text Modding
+Unlike the other modding sections, modifying text in Helldivers does not require Blender or the Helldivers SDK. It instead takes advantage of the Audio modding tool and it's capability for modifying text.
 
 ## Required Resources
 

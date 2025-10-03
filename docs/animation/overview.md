@@ -4,7 +4,7 @@ next: true
 description: The Animation Modding Overview
 ---
 
-# Getting Started
+# Animation Modding
 
 To get started modifying animations using the SDK, we need to set up a few things first.
 

@@ -5,7 +5,7 @@ description: Get started with developing cape mods for Helldivers 2.
 outline: [2, 3]
 ---
 
-# Getting Started
+# Cape Modding
 The hub for all Cape Modding Information.
 
 ## Required Programs
