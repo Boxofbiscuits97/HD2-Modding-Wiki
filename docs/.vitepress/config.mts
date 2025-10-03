@@ -124,14 +124,16 @@ export default defineConfig({
               {text: 'Voicelines', link: '/audio/voicelines'},
               {text: 'SFX', link: '/audio/sfx'}
             ]
-          },{
+          },
+          {
             text: 'Text',
             collapsed: true,
             link: '/text/overview',
             items: [
 
             ]
-          },{
+          },
+          {
             text: 'Capes',
             collapsed: true,
             link: '/cape/overview',
@@ -139,6 +141,16 @@ export default defineConfig({
               {text: 'Beginners Course', link: '/cape/beginnersguide'},
               {text: 'Intermediate Course', link: '/cape/intermediateguide'},
               {text: 'Advanced Course', link: '/cape/advancedguide'}
+            ]
+          },
+          {
+            text: 'Animation',
+            collapsed: true,
+            link: '/animation/overview',
+            items: [
+              {text: 'Aligning Magazines', link: '/animation/aligningmagazines'},
+              {text: 'Other Games\' Animations', link : '/animation/othergamesanimations'},
+              {text: 'Rig Editing', link: '/animation/rigediting'}
             ]
           }
         ]
