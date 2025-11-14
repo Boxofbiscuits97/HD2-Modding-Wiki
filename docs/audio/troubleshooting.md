@@ -29,6 +29,9 @@ You can tell the difference between a SFX and music file most often by the lengt
 ## 10ms of music plays, then glitches into silence against the Illuminate.
 This is a result of shared music between the archives being inconsistent. The same data must be set exactly the same (with the same audio files, wem timing, and segment timing) to fix the tracks playing a short burst then going silent.
 
+## A few seconds of music plays at the Extraction and stops immediately.
+This is most likely an issue of having descent music and extraction music mods enabled simultanously, one of which will cancel the other out. If you want to be able to play with both at the same time, they will have to be combined into one mod.
+
 ## The game crashes during Extraction.
 That means there is a mismatch in data between the 3 faction archives and the master `2e24ba9dd702da5c` archive. Make sure the music changed is the same across all four archives, and the timing is exactly the same.  Even a 0.0001 ms difference will cause the game to panic when the song is cued.
 
