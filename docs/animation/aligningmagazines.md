@@ -8,49 +8,46 @@ description: Aligning Magazines with your weapons
 
 For messing around with animations for weapons, you more than likely want to see where the magazine for your weapon is. Since weapons in Helldivers 2 can have different magazines, the weapon and the magazine are two separate rigs.
 
-This means we have to combine them in a really weird way to get things lined up properly, and we can’t use the SDK’s built-in armature merging as that currently doesn’t support attaching rigs to any bones other than the StingrayEntityRoot bone.
-
-For weapons specifically, the StingrayEntityRoot of the magazine needs to be aligned and then parented to the attach_mag of the weapon armature. 
-
-Here’s how you do that:
-
+To view animations with a magazine, you will need to parent the magazine to the weapon's `attach_mag` bone. Here's the simplest method to do that:
 
 1. Load both weapon and magazine, making sure to merge armatures off either in the settings or that you don’t have the rig selected when you import the other unit. You should see two separate armatures in the scene, one for the weapon and one for the mag.
-![Import Weapon and Mag](../public/images/animation/import-weapon-and-mag.png)
+![Import Weapon and Mag](/images/animation/import-weapon-and-mag.png)
 
+2. Select the magazine's armature.
+![Select Mag](/images/animation/select-magazine-armature.png)
 
-2. Select both armatures.
-![Select Armatures](../public/images/animation/select-both-armatures.png)
+3. Navigate to the magazine's constraints tab.
+![View Constraints](/images/animation/constraints-tab.png)
 
+4. Click Add Object Constraint, and select Child Of.
+![Add Child Of Constraint](/images/animation/child-of-constraint.png)
 
-3. Switch to pose mode. It is recommended that you go into the X view so you’re viewing it from a perfectly flat angle.
+5. For the target of the Child Of constraint, select the weapon's armature.
+![Select Target](/images/animation/child-of-target.png)
 
+6. A sub-target labeled Bone will appear. In this drop down, select attach_mag.
+![Select Bone](/images/animation/child-of-bone.png)
 
-4. Select the `StingrayEntityRoot` bone on the mag armature and move it so it is in the same place as the `attach_mag` bone on the gun.
-![Move Stingray Entity Root](../public/images/animation/move-stingray-root.png)
+7. The magazine will move to the location of the attach_mag bone.
+![Magazine Moved](/images/animation/magazine-moved-good-rotation.png)
 
+::: tip
+Sometimes the magazine will be rotated oddly, like here.
+![Magazine Moved Rotated Incorrectly](/images/animation/magazine-moved-bad-rotation.png)
 
-If you are having trouble figuring out which bone is which, when selecting it, you will see the name of the bone in pose mode in the top left of your Blender window.
-![See Bone Names](../public/images/animation/see-bone-name.png)
+To fix the rotation:
+* Select the magazine's armature in the viewport and hit `R` then `X`. You will go into X-axis rotation mode, and you can rotate the magazine by either moving the mouse until it lines up, or by typing a specific angle in the viewport. You can confirm the rotation by left clicking or hitting `Enter`, and you can cancel by right clicking or hitting `Esc`.
+![Magazine Rotation Mode](/images/animation/rotation-mode.png)
 
+* It is likely you need to rotate by 90 degrees in one direction or another, so you can type `90` to be precise.
+![Magazine Rotated Wrong 90](/images/animation/rotate-90-wrong.png)
 
-You’re going to zoom in as much as possible to make sure they are properly aligned.
-![Zoom In](../public/images/animation/zoom-in.png)
+* If the typed value is the wrong direction, you can hit the `-` key to reverse the direction of rotation.
+![Magazine Rotated 90](/images/animation/rotate-90-right.png)
 
-
-With max zoom, you can see they are not aligned.
-![Max Zoom](../public/images/animation/max-zoom.png)
-
-
-You may also want to switch to the Y view to make sure it’s aligned correctly, looking from behind.
-![Rear View](../public/images/animation/rear-view.png)
-
-5. CTRL-click the `attach_mag` bone on the gun so you now have the `StingrayEntityRoot` on the mag and the `attach_mag` on the gun selected. It might be easier to unfold the bones in the hierarchy and find them. Make sure you select the magazine’s `StingrayEntityRoot` first and then the attach_mag of the weapon.
-![Select Both Bones](../public/images/animation/select-both-bones.png)
-
-6. Parent the bone with `CTRL-P > Bone`.
-![Parent Bones](../public/images/animation/parent-bones.png)
+* Finally hit `Enter` to confirm the changes.
+:::
 
 ### Now you can preview animations with your magazine!
-![Weapon Reload](../public/images/animation/weapon-reload.gif)
+<video autoplay="autoplay" loop="loop" src="/images/animation/weapon-reload.mp4" />
 
