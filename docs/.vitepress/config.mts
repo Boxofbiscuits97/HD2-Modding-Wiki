@@ -12,150 +12,140 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' }
+      { text: 'Home', link: '/' },
+      { text: 'Players', link:'/user/overview', activeMatch: '/user/'},
+      { text: 'Modders', link:'/dev/overview', activeMatch: '/dev/'}
     ],
 
-    sidebar: [
-      {
-        text: `Users`,
-        items: [
-          { 
-            text: 'Getting Started', 
-            link: `/player-overview`
-          },
-          { 
-            text: 'Mod Managers', 
-            link: `/mod manager/overview`,
-            collapsed: true,
-            items: [
-              {text: 'Arsenal', link: `/mod manager/arsenal`},
-              {text: 'HD2MM', link: `/mod manager/hd2mm`}
-            ]
-          }
-        ]
-      },
-      {
-        text: 'Developers',
-        items: [
-          { text: 'Getting Started',
-            collapsed: true,
-            link: '/overview' ,
-            items: [
-              {text: 'Terms', link: '/terms'},
-              {text: 'Settings', link: '/sdk functions/settings'},
-              {text: 'Special Tools', link: '/sdk functions/special-tools'},
-              {text: 'Functions', link: '/sdk functions/functions'}
-            ]
-          },
-          { 
-            text: 'Textures', 
-            collapsed: true,
-            link: '/textures/overview',
-            items: [
-              {text: 'Texture Baking', link: '/textures/texture-baking'},
-              {text: '(Legacy) Texture Atlas', link: '/textures/texture-atlas'}
-            ]
-          },
-          { 
-            text: 'Materials', 
-            collapsed: true,
-            link: '/materials/overview',
-            items: [
-              {text: 'Advanced', link: '/materials/advanced'},
-              {text: 'Basic+', link: '/materials/basic'},
-              {text: 'Translucent', link: '/materials/translucent'},
-              {text: 'Alpha Clip', link: '/materials/alphaclip'},
-              {text: 'Original', link: '/materials/original'},
-              {text: 'Emissive', link: '/materials/emissive'},
-              {text: '(Legacy) Material Slot Order', link: '/materials/material-slot-order'},
-              {text: '(Legacy) Extra Material', link: '/materials/extra-material'}
-            ]
-          },
-          { 
-            text: 'Armor Modding', 
-            collapsed: true,
-            link: '/armor modding/overview',
-            items: [
-              {text: 'HD2 Armor Anatomy', link: '/armor modding/anatomy'},
-              {text: 'HD2 Body Parts', link: '/armor modding/body-parts'},
-              {text: 'Armor Replacement', link: '/armor modding/armor-replacement'}
-            ]
-          },
-          { 
-            text: 'Weapon Modding', 
-            collapsed: true,
-            link: '/weapon modding/overview',
-            items: [
-              {text: 'Weapon Replacement', link: '/weapon modding/weapon-replacement'},
-              {text: 'Weapon/Equipment Replacement (LODs)', link: '/weapon modding/weapon-replacement-lods'}
-            ]
-          },
-          {
-            text: 'Animation Modding',
-            collapsed: true,
-            link: '/animation/overview',
-            items: [
-              {text: 'Aligning Magazines', link: '/animation/aligningmagazines'},
-              {text: 'Other Games\' Animations', link : '/animation/othergamesanimations'},
-              {text: 'Rig Editing', link: '/animation/rigediting'}
-            ]
-          },
-          {
-            text: 'Audio Modding',
-            collapsed: true,
-            link: '/audio/overview',
-            items: [
-              {
-                text: 'Music', 
-                link: '/audio/music', 
-                collapsed: true, 
-                items: [
-                  {text: 'Mission Music', link: '/audio/missionmusic'},
-                  {text: 'Troubleshooting', link: '/audio/troubleshooting'}
-                ]
-              },
-              {text: 'Voicelines', link: '/audio/voicelines'},
-              {text: 'SFX', link: '/audio/sfx'}
-            ]
-          },
-          {
-            text: 'Text Modding',
-            collapsed: true,
-            link: '/text/overview',
-            items: [
+    sidebar: {
+      '/': [
+        { 
+          text: 'Getting Started', 
+          link: `/user/overview`
+        },
+        { 
+          text: 'Mod Managers', 
+          link: `/user/mod manager/overview`,
+          collapsed: true,
+          items: [
+            {text: 'Arsenal', link: `/user/mod manager/arsenal`},
+            {text: 'HD2MM', link: `/user/mod manager/hd2mm`}
+          ]
+        }
+      ],
+      '/dev/': [
+        { text: 'Getting Started',
+          collapsed: true,
+          link: '/dev/overview' ,
+          items: [
+            {text: 'Terms', link: '/dev/terms'},
+            {text: 'Settings', link: '/dev/sdk functions/settings'},
+            {text: 'Special Tools', link: '/dev/sdk functions/special-tools'},
+            {text: 'Functions', link: '/dev/sdk functions/functions'}
+          ]
+        },
+        { 
+          text: 'Textures', 
+          collapsed: true,
+          link: '/dev/textures/overview',
+          items: [
+            {text: 'Texture Baking', link: '/dev/textures/texture-baking'},
+            {text: '(Legacy) Texture Atlas', link: '/dev/textures/texture-atlas'}
+          ]
+        },
+        { 
+          text: 'Materials', 
+          collapsed: true,
+          link: '/dev/materials/overview',
+          items: [
+            {text: 'Advanced', link: '/dev/materials/advanced'},
+            {text: 'Basic+', link: '/dev/materials/basic'},
+            {text: 'Translucent', link: '/dev/materials/translucent'},
+            {text: 'Alpha Clip', link: '/dev/materials/alphaclip'},
+            {text: 'Original', link: '/dev/materials/original'},
+            {text: 'Emissive', link: '/dev/materials/emissive'},
+            {text: '(Legacy) Material Slot Order', link: '/dev/materials/material-slot-order'},
+            {text: '(Legacy) Extra Material', link: '/dev/materials/extra-material'}
+          ]
+        },
+        { 
+          text: 'Armor Modding', 
+          collapsed: true,
+          link: '/dev/armor modding/overview',
+          items: [
+            {text: 'HD2 Armor Anatomy', link: '/dev/armor modding/anatomy'},
+            {text: 'HD2 Body Parts', link: '/dev/armor modding/body-parts'},
+            {text: 'Armor Replacement', link: '/dev/armor modding/armor-replacement'}
+          ]
+        },
+        { 
+          text: 'Weapon Modding', 
+          collapsed: true,
+          link: '/dev/weapon modding/overview',
+          items: [
+            {text: 'Weapon Replacement', link: '/dev/weapon modding/weapon-replacement'},
+            {text: 'LOD Dependant Units', link: '/dev/weapon modding/lod-dependant-units'}
+          ]
+        },
+        {
+          text: 'Animation Modding',
+          collapsed: true,
+          link: '/dev/animation/overview',
+          items: [
+            {text: 'Animation Replacement', link: '/dev/animation/animation-replacement'},
+            {text: 'Aligning Magazines', link: '/dev/animation/aligningmagazines'},
+            {text: 'Importing External Animations', link : '/dev/animation/external-animations'},
+            {text: 'Rig Editing', link: '/dev/animation/rigediting'}
+          ]
+        },
+        {
+          text: 'Audio Modding',
+          collapsed: true,
+          link: '/dev/audio/overview',
+          items: [
+            {
+              text: 'Music', 
+              link: '/dev/audio/music', 
+              collapsed: true, 
+              items: [
+                {text: 'Mission Music', link: '/dev/audio/missionmusic'},
+                {text: 'Troubleshooting', link: '/dev/audio/troubleshooting'}
+              ]
+            },
+            {text: 'Voicelines', link: '/dev/audio/voicelines'},
+            {text: 'SFX', link: '/dev/audio/sfx'}
+          ]
+        },
+        {
+          text: 'Text Modding',
+          collapsed: true,
+          link: '/dev/text/overview',
+          items: [
 
-            ]
-          },
-          {
-            text: 'LUT Modding',
-            collapsed: true,
-            link: '/lut/overview',
-            items: [
-              
-            ]
-          },
-          {
-            text: 'Cape Modding',
-            collapsed: true,
-            link: '/cape/overview',
-            items: [
-              {text: 'Beginners Course', link: '/cape/beginnersguide'},
-              {text: 'Intermediate Course', link: '/cape/intermediateguide'},
-              {text: 'Advanced Course', link: '/cape/advancedguide'}
-            ]
-          }
-        ]
-      },
-      {
-        text: "Other",
-        items: [
-          { text: `FAQ`, link: `/faq`}
-        ]
-      }
-    ],
+          ]
+        },
+        {
+          text: 'LUT Modding',
+          collapsed: true,
+          link: '/dev/lut/overview',
+          items: [
+            
+          ]
+        },
+        {
+          text: 'Cape Modding',
+          collapsed: true,
+          link: '/dev/cape/overview',
+          items: [
+            {text: 'Beginners Course', link: '/dev/cape/beginnersguide'}
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Boxofbiscuits97/HD2-Modding-Wiki' }
+      { icon: 'github', link: 'https://github.com/Boxofbiscuits97/HD2-Modding-Wiki' },
+      { icon: 'discord', link: 'https://discord.gg/ZwjPaZNwH7' }
     ],
 
     editLink: {

@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Getting Started
-      link: /overview
+      link: /user/overview
     - theme: alt
       text: Contribute on Github
       link: https://github.com/Boxofbiscuits97/HD2-Modding-Wiki?tab=readme-ov-file#contributing-to-the-site
@@ -16,12 +16,9 @@ hero:
 features:
   - title: Installing Mods
     details: Learn how to install mods for Helldivers 2!
-    link: ./player-overview
+    link: ./user/overview
   - title: Developing Mods
     details: Learn how to make your own mods for Helldivers 2!
-    link: ./overview
-  - title: FAQ
-    details: Find answers for common questions!
-    link: ./faq
+    link: ./dev/overview
 ---
 
