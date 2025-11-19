@@ -31,7 +31,7 @@ Certain `units` may need different settings to properly import into Blender. Som
 
 ![Import3](/images/weapon-modding/import3.png)
 
-There also may be cases where some `units` require all `LODs` to be modified in order for it to work properly. Visit [this](weapon-replacement-lods) section on how to properly modify Non-AutoLOD `units`
+There also may be cases where some `units` require all `LODs` to be modified in order for it to work properly. Visit [this](./lod-dependant-units) section on how to properly modify Non-AutoLOD `units`
 
 ## Alignment
 

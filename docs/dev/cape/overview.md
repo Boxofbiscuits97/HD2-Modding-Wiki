@@ -35,14 +35,3 @@ Has the archive listing for every known cape in the game. (Updated very frequent
 
 #### [HD2 Cape Modding Cheatsheet](https://docs.google.com/spreadsheets/d/1IcQe2r0ApBa8Ib_v4yAR1NZvyvsg__5FMVQnw-pkXmQ/edit?gid=1321207950#gid=1321207950&range=C1)
 Has the archive listing, file names, and shared asset markings for every known cape in the game. (Updated monthly)
-
-## Cape Modding Courses
-
-#### [Beginner's Course](./beginnersguide)
-If you've never made a mod, this course is for you.
-
-#### [Intermediate Course](./intermediateguide)
-If you've made a few mods before but never modded capes, you're the target demographic here.
-
-#### [Advanced Guide](./advancedguide)
-For those who've already mad numerous cape mods, but want to learn the deepest secrets of the craft.

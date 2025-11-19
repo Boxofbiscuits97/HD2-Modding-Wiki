@@ -10,7 +10,7 @@ outline: [2, 3]
 ---
 
 # Introduction
-Welcome to Ministry of Music.  If you haven't already, follow the set-up guide on the [Overview Page](/audio/overview).  These guides will assume you already have the [Audio Modding Tool](/audio/overview.html#audio-modding-tool), [Wwise](/audio/overview.html#wwise), a general understanding of how the Audio Modding Tool works, and your audio files already made.
+Welcome to Ministry of Music.  If you haven't already, follow the set-up guide on the [Overview Page](./overview).  These guides will assume you already have the [Audio Modding Tool](./overview.html#audio-modding-tool), [Wwise](./overview.html#wwise), a general understanding of how the Audio Modding Tool works, and your audio files already made.
 
 This page will cover all current information the community has pertaining to modding the music of Helldivers 2.
 This page, like the rest of this site, will adapt and change over time as new information is discovered.

@@ -92,7 +92,7 @@ Not visible in selection screen
 No metallic
 No Environmental overlay
 
-### [LUT](/lut/overview)
+### [LUT](../lut/overview)
 
 Pros
 

@@ -74,16 +74,11 @@ WEMs live inside the Tracks. They are the sound files the game uses to play audi
 
 
 ### <font color="#008080">Silencing Wems</font>
-This is done by setting all four fields to 0 in the wem’s [Track](/audio/overview.html#track) settings.
+This is done by setting all four fields to 0 in the wem’s Track settings.
 
 
 ### <font color="#008080">Silencing Segments</font>
 This is done by setting all three fields to 0 in the segment’s settings.
-
-
-### <font color="#008080">Crying</font>
-This will be something that occurs throughout the modding process, occasionally up to (but not limited to) 83 times per session.  Just remember; crying is weakness leaving the body.
-Only the strong will prevail.
 
 
 
