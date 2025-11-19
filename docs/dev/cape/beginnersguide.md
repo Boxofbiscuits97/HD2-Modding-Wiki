@@ -10,8 +10,6 @@ Welcome to the beginning of your Cape Modding Adventure.
 
 This guide is aimed at those who have never made a mod before and would like to get started.
 
-If you feel this guide holds your hand too much please check out our [Intermediate Guide](./intermediateguide)
-
 ## Tools Needed
 If you haven't already, download the following files.
 
