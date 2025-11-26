@@ -167,7 +167,7 @@ You will also need to copy the point of origin for the body part as each body pa
 
 ![Properties3](/images/armor-modding/properties3.gif)
 
-### Copy Properties throguh Merging
+### Copy Properties through Merging
 
 In this method you will copy the properties of the base game `unit` through merging your mesh to the base game `mesh`.
 
@@ -199,7 +199,7 @@ You may find that you do not need all the body parts of an armor set. In order t
 
 ![Invisible1](/images/armor-modding/invisible1.gif)
 
-The SDK cannot save a `unit` to have 0 vertices, so you need to save at least 1 vertex. Games cannot render `mesh` faces with less than 3 vertices so by reducing the total vertices to 0, you have effectively made the `mesh` invisible.
+The SDK cannot save a `unit` to have 0 vertices, so you need to save at least 1 vertex. Games cannot render `mesh` faces with less than 3 vertices so by reducing the total vertices to 1, you have effectively made the `mesh` invisible.
 
 ## Creating Patch
 
