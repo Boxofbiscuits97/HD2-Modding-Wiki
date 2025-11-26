@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/HD2-Modding-Wiki/favicon.ico' }]
   ],
   base: "/HD2-Modding-Wiki/",
   title: "Helldivers 2 Modding Wiki",
