@@ -51,9 +51,9 @@ Your model does not need to be cut in the same exact way as the Helldiver model.
 
 For example, for the legs you would cut where the thigh weight is 1.0 because the thigh bone is shared between the Helldiver leg part and the Helldiver waist part.
 
-![Cutting2](/images/armor-modding/cutting2.png)
-
-![Cutting3](/images/armor-modding/cutting3.png)
+Helldiver Leg | Custom Leg
+--- | ---
+![Cutting2](/images/armor-modding/cutting2.png) | ![Cutting3](/images/armor-modding/cutting3.png)
 
 <iframe src="https://www.youtube.com/embed/yZnlUa1iLZ4" title="Cutting" frameborder="0" allowfullscreen></iframe>
 
@@ -91,7 +91,7 @@ There may be some errors on the mesh after this operation, so you may need to se
 
 ![Seams3](/images/armor-modding/seams3.png)
 
-## Weight Paint
+## Weight Painting
 
 To have your model move in-game, the model will need to have the proper `vertex groups` applied to the `mesh`. There are two methods that can be used here. 
 
@@ -108,9 +108,9 @@ It is highly recommended to not use the shoulder bone of the Helldiver 2 rig. Th
 ::: info
 Remember to make sure that all your body parts are 1.0 at the seams for the shared bone. It should look like the first picture and not the second picture. Edges for shared bones should only be weighted to a single bone!
 
-![Weight1](/images/armor-modding/weight1.png)
-
-![Weight2](/images/armor-modding/weight2.png)
+Weighted Correctly | Weighted Incorrectly
+--- | ---
+![Weight1](/images/armor-modding/weight1.png) | ![Weight2](/images/armor-modding/weight2.png)
 :::
 
 Know the difference between a soft body weight and a hard body weight.
@@ -125,7 +125,7 @@ Know the difference between a soft body weight and a hard body weight.
 
 ## Materials/Textures
 
-Use the SDK to generate `materials` for your `mesh` to utilize. Please refer to [this](../materials/overview) section on the types of `material` shaders are available to use.
+Use the SDK to generate `materials` for your `mesh` to utilize. Please refer to the [Materials Documentation](../materials/overview) on the types of `material` shaders that are available to use.
 
     In the material foldout section hit the + button
     Choose material template you want to use
@@ -188,7 +188,7 @@ If you use this option, make sure to rename your UVMap to UVMap instead of whate
 
 Whatever option you choose, do this for all the `units` you are replacing.
 
-## Making Unused Assets Invisible
+## Removing Unused Assets
 
 You may find that you do not need all the body parts of an armor set. In order to not make these parts show up on top of your modded model, you will need to make them invisible.
 
@@ -208,7 +208,7 @@ The model is now ready for in-game testing. For first-time modders, it is recomm
 ![Patch1](/images/armor-modding/patch1.png)
 
     Hit New Patch to have a fresh patch
-    In your Blend scene, have all body parts you are replacing, including the invisible body parts
+    Have all body parts you are replacing, including the invisible body parts
     Select all body parts with A
     Right Click > Save Units
     Wait for SDK to process
@@ -224,27 +224,28 @@ Continue tweaking your model until it feels good to you.
 ## Fixing Micro-Seams
 
 Sometimes even when your model is properly weighted, micro seams will appear at your cuts.
+These appear as little bright pixel holes scattered across the seam of the model.
 
-![MircoSeam1](/images/armor-modding/microseam1.png)
-
-![MircoSeam2](/images/armor-modding/microseam2.png)
+Underarm | Leg
+--- | ---
+![MircoSeam1](/images/armor-modding/microseam1.png) | ![MircoSeam2](/images/armor-modding/microseam2.png)
 
 To fix this you simply just need to extrude your model slightly at the cuts.
 
     Select mesh
-    Open edit mode and select vertices on the edge of cut
+    Open edit mode and alt click on the edge to select the edge loop
     Press E to extrude
     Move extrusion into other body part
     Scale down to hide extrusion inside
 
 ![MircoSeam3](/images/armor-modding/microseam3.gif)
 
-This will cause your model's `mesh normals` to get messed up so you will have to use a data transfer modifier to fix it. Go to the `Fixing Cut Seams` section.
+This will cause your model's `mesh normals` to get messed up so you will have to use a data transfer modifier to fix it. Go to the [Fixing Cut Seams](#fixing-cut-seams) section if you need a refresher on how to do that.
 
 ![MircoSeam4](/images/armor-modding/microseam4.png)
 
 Now the 1-pixel seams are gone
 
-![MircoSeam5](/images/armor-modding/microseam5.png)
-
-![MircoSeam6](/images/armor-modding/microseam6.png)
+Underarm | Leg
+--- | ---
+![MircoSeam5](/images/armor-modding/microseam5.png) | ![MircoSeam6](/images/armor-modding/microseam6.png)

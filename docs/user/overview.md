@@ -9,7 +9,7 @@ description: Get started with using mods for Helldivers 2.
 You've likely landed on the page because you're a complete novice to Helldivers 2 modding. If you've never installed and played with any mods, this is the place with you.
 
 ::: info
-If you're looking to start creating mods, look to the [Developer Section](/dev/overview)
+If you're looking to start creating mods, go to the [Developer Section](/dev/overview)
 :::
 
 ## Nexus
