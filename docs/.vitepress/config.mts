@@ -17,6 +17,10 @@ export default defineConfig({
       { text: 'Modders', link:'/dev/overview', activeMatch: '/dev/'}
     ],
 
+    search: {
+      provider: 'local'
+    },
+
     sidebar: {
       '/': [
         { 
@@ -121,7 +125,7 @@ export default defineConfig({
           collapsed: true,
           link: '/dev/text/overview',
           items: [
-
+              {text: 'Replacing Text', link: '/dev/text/replacing-text'}
           ]
         },
         {
@@ -138,6 +142,17 @@ export default defineConfig({
           link: '/dev/cape/overview',
           items: [
             {text: 'Beginners Course', link: '/dev/cape/beginnersguide'}
+          ]
+        },
+        {
+          text: 'Miscellaneous Modding',
+          collapsed: true,
+          link: '/dev/misc/overview',
+          items: [
+            {text: 'ID Swapping', link: '/dev/misc/id-swapping'},
+            {text: 'Separating Patches', link: '/dev/misc/separating-patches'},
+            {text: 'Rank Replacement', link: '/dev/misc/rank-replacement'},
+            {text: 'Player Card Replacement', link: '/dev/misc/player-card-replacement'}
           ]
         }
       ]
