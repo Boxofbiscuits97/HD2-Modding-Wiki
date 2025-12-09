@@ -294,3 +294,17 @@ The bone `Roll` determines global rotation of the hand in-game.
 If the roll was changed by 180 degrees, it would look like this in-game.
 
 ![Bones18](/images/weapon-modding/bones18.png)
+
+
+## Troubleshoot
+
+::: warning
+ If you get an error like `"Object: 281046277510948131_lod0.001 has 2 non Helldivers 2 Materials"`, you need to create a HD2 SDK compatible material. 
+ - Open the HD2 SDK Addon
+ - Scroll down till you find "material - xx....."
+ - Click the second icon
+ - On "Add Material" window, template should be "Advanced", click OK
+ - On your new model, add/replace the material with the newly created one.
+
+ ![Debug1](/images/weapon-modding/debug1.png)
+:::
