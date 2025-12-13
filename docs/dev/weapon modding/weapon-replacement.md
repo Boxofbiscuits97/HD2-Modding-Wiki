@@ -226,6 +226,7 @@ These are the main bones you want to worry about:
     attach_optic/sight - Two bones that control where the sight attachments are placed and the armory render screen for said attachment
     ejector/numbers - Two bones that control where bullet casing spawn from
     IK_left - The left hand position
+    sight - The first person view when aiming down sights. Some can't be moved by Y axis and reflect ingame, only X and Z will reflect ingame
 
 To move the bones, have the `armature` selected and then go to `Edit Mode`. From here move the bones to where they need to be on the model.
 
