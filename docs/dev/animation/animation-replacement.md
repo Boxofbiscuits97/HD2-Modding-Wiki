@@ -65,7 +65,7 @@ If you want to rename your animations, **KEEP THE ID** and just put your name af
 
 
 ### Saving Bone Positions
-Depending on whether the position of Bones changes in your animation, you will want to enable the `Save Bone Positions` setting in your settings. (This may result in some issues with additive animations in-game, so be aware.)
+Depending on whether the position of Bones changes in your animation, you will want to enable the `Save Bone Positions` setting in your Helldivers 2 SDK: Community Edition' `Settings` tab. (This may result in some issues with additive animations in-game, so be aware.)
 ![Save Bone Positions](/images/animation/save-bone-positions.png)
 
 
