@@ -19,7 +19,7 @@ For example, the SR-24 Brawny Arm Right part has 2 materials. You must have 2 ma
 
 You cannot go over the material amount of the base game or else you will <u>**instantly crash**</u> the game on start-up.
 
-There are very specific cases where you can add materials to an object, but this is rare and only really applictable to weapons and props. Please refer to [this](./extra-material) section to learn more about adding extra materials to an object.
+There are very specific cases where you can add materials to an object, but this is rare and only really applicable to weapons and props. Please refer to [this](./extra-material) section to learn more about adding extra materials to an object.
 
 View [this](../textures/texture-atlas) section on how to combine texture sets into a single `texture atlas` so that you can adhere to the object's material constraints.
 :::
@@ -27,76 +27,96 @@ View [this](../textures/texture-atlas) section on how to combine texture sets in
 ## Material Presets
 There are a variety of different presets you can use. Each one has its own pros and cons.
 
-### [Advanced](./advanced)
-Pros
-Metallic texture
-Strongest Emissive
-No texture flickering
-Visible in selection screens
+## [Advanced](./advanced)
 
-Cons
-No environmental overlay
-No transparency
-Requires more complex  texture setup than other shader types
+### Pros
+- Metallic texture
+- Strongest Emissive
+- No texture flickering
+- Visible in selection screens
 
-### [Basic](./basic)
-Pros
-Metallic texture
-Environmental overlay*
+### Cons
+- No environmental overlay
+- No transparency
+- Requires more complex  texture setup than other shader types
 
-Cons
-Not visible in selection screen
-No emissive
+## [Basic](./basic)
 
-### [Basic+](./basic)
-Pros
-Metallic texture
-Visible in selection screens
+### Pros
+- Metallic texture
+- Environmental overlay*
 
-Cons
-No emissive
-Tends to flicker on weapon models
+### Cons
+- Not visible in selection screen
+- No emissive
 
-### [Translucent](./translucent)
-Pros
-Allows the usage of an alpha mask (useful for things like hair/decals)
+## [Basic+](./basic)
 
-Cons
-No emissive
-Not visible in selection screens
+### Pros
+- Metallic texture
+- Visible in selection screens
 
-### [Alpha Clip](./alphaclip)
-Pros
-Transparency*
+### Cons
+- No emissive
+- Tends to flicker on weapon models
 
-Cons
-Not visible in selection screen
-No Environmental overlay
+## [Translucent](./translucent)
 
-### [Original](./original)
-Pros
-Visible in selection screens
+### Pros
+- Allows the usage of an alpha mask (useful for things like hair/decals)
 
-Cons
-No metallic
-Weaker emissive than “Emissive” preset
-No Environmental overlay
-Static effect in armory screens (added patch 1.002.200)
+### Cons
+- No emissive
+- Not visible in selection screens
 
-### [Emissive](./emissive)
-Pros
-Stronger emissive that original
+## [Alpha Clip](./alphaclip)
 
-Cons
-Not visible in selection screen
-No metallic
-No Environmental overlay
+### Pros
+- Transparency*
 
-### [LUT](../lut/overview)
+### Cons
+- Not visible in selection screen
+- No Environmental overlay
 
-Pros
+## [Alpha Clip+](./alphaclip)
 
-Cons
+### Pros
+- Transparency*
+- Multi-Colored Emission Texture
+
+### Cons
+- Not visible in selection screen
+- No Environmental overlay
+
+## [Original](./original)
+
+### Pros
+- Visible in selection screens
+
+### Cons
+- No metallic
+- Weaker emissive than “Emissive” preset
+- No Environmental overlay
+- Static effect in armory screens (added patch 1.002.200)
+
+## [Emissive](./emissive)
+
+### Pros
+- Stronger emissive that original
+
+### Cons
+- Not visible in selection screen
+- No metallic
+- No Environmental overlay
+
+## [LUT](../lut/overview)
+
+### Pros
+- Base Game Material System
+- Extensive capabilities for visuals
+
+### Cons
+- High barrier for entry to use
 
 
 ## Applying Your Material

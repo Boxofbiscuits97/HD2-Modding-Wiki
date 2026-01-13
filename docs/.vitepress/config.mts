@@ -65,7 +65,7 @@ export default defineConfig({
             {text: 'Advanced', link: '/dev/materials/advanced'},
             {text: 'Basic+', link: '/dev/materials/basic'},
             {text: 'Translucent', link: '/dev/materials/translucent'},
-            {text: 'Alpha Clip', link: '/dev/materials/alphaclip'},
+            {text: 'Alpha Clip+', link: '/dev/materials/alphaclip'},
             {text: 'Original', link: '/dev/materials/original'},
             {text: 'Emissive', link: '/dev/materials/emissive'},
             {text: '(Legacy) Material Slot Order', link: '/dev/materials/material-slot-order'},

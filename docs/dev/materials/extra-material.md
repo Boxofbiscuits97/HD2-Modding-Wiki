@@ -1,5 +1,9 @@
 # Extra Material
 
+::: warning
+This section is if you are using Legacy Weights or are on a version before SDK 3.0
+:::
+
 Some object `LODs` can have an extra material attached to it without instantly crashing the game. This is exclusive in use to weapons and props.
 
 The only reason why you would use this is for optimization purposes or for adding different `material` types to an object.

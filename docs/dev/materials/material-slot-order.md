@@ -1,5 +1,9 @@
 # Material Slot Order
 
+::: warning
+This section is if you are using Legacy Weights or are on a version before SDK 3.0
+:::
+
 In HD2, the slot of the `material` determines what `vertex groups` are assigned to what `bones` on the `armature`. 
 
 This means that if all the `weights` are assigned to material slot 2, assigning the `material` you are using for your `mesh` to slot 1 will cause the `weights` to be completely wrong.
