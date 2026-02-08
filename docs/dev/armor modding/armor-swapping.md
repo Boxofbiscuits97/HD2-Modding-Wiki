@@ -1,10 +1,10 @@
 ---
 prev: true
 next: true
-description: Avatar Swapping 
+description: Armor Swapping 
 ---
 
-# Avatar Swapping
+# Armor Swapping
 
 An updated method for swapping custom and base game models from one armor to another, unlike ID swapping, avatar swapping can be repatched.
 
