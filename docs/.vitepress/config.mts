@@ -77,9 +77,10 @@ export default defineConfig({
           collapsed: true,
           link: '/dev/armor modding/overview',
           items: [
+            {text: 'Armor Replacement', link: '/dev/armor modding/armor-replacement'},
             {text: 'HD2 Armor Anatomy', link: '/dev/armor modding/anatomy'},
             {text: 'HD2 Body Parts', link: '/dev/armor modding/body-parts'},
-            {text: 'Armor Replacement', link: '/dev/armor modding/armor-replacement'}
+            {text: 'Armor Swapping', link: '/dev/armor modding/armor-swapping'}
           ]
         },
         { 
