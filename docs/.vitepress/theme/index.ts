@@ -4,6 +4,9 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 
+import { YouTubeEmbed } from '@miletorix/vitepress-youtube-embed'
+import '@miletorix/vitepress-youtube-embed/style.css'
+
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -11,7 +14,7 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+  enhanceApp(ctx) {
+    ctx.app.component('YouTubeEmbed', YouTubeEmbed) 
   }
 } satisfies Theme

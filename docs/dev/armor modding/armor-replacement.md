@@ -6,6 +6,13 @@ description: Armor Replacement.
 
 # Armor Replacement
 
+## Video Modding Guide
+<YouTubeEmbed video-id="YcAdXE2xBmQ" />
+
+::: warning
+This is a significantly long video guide that explains the modding process from start to finish. It does not require any expereience to view and learn from but it is reccomended that you look at the written steps bellow for further explaination if neccesary or if written guides are preferred.
+:::
+
 ## Setup
 
 Upon launcher Blender and having the SDK installed, you will need to do some basic setup.
@@ -39,7 +46,7 @@ Import the model you are going to use to replace the base game armor set. You wi
 The model you are using should already have a rig, if it does not, you cannot do this step until you have rigged. This can be done by either rigging said model yourself or by obtaining a model that is already rigged.
 :::
 
-<iframe src="https://www.youtube.com/embed/TEPTSrf7ftw" title="Posing" frameborder="0" allowfullscreen></iframe>
+<YouTubeEmbed video-id="TEPTSrf7ftw" />
 
 ## Cutting
 
