@@ -116,9 +116,7 @@ export default defineConfig({
                 {text: 'Mission Music', link: '/dev/audio/missionmusic'},
                 {text: 'Troubleshooting', link: '/dev/audio/troubleshooting'}
               ]
-            },
-            {text: 'Voicelines', link: '/dev/audio/voicelines'},
-            {text: 'SFX', link: '/dev/audio/sfx'}
+            }
           ]
         },
         {
@@ -135,14 +133,6 @@ export default defineConfig({
           link: '/dev/lut/overview',
           items: [
             
-          ]
-        },
-        {
-          text: 'Cape Modding',
-          collapsed: true,
-          link: '/dev/cape/overview',
-          items: [
-            {text: 'Beginners Course', link: '/dev/cape/beginnersguide'}
           ]
         },
         {
