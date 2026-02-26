@@ -36,18 +36,30 @@ Select your custom model and add an armature modifier and select the rig as the 
 
 This now allows us to use any vertex group of the Avatar rig to weight our custom model.
 
-## Weighting Your Model
+## The Jiggle Bones
 
-The Helldiver Avatar rig has a variety of bones in it that are jiggle bones. Here is a list of them:
+The Helldiver Avatar rig has a variety of bones in it that are jiggle bones. Here is a list of them, what they are good for and what bone is their parent:
 
+**Works well overall** (Chest Bone)
 - `support_mg`
 - `support`
+
+
+**Works well with lower body** (Spine1 Bone)
 - `attach_intelpad`
 - `attach_samplepouch`
-- `sling`
+
+**Only moves horizontally** (Spine1 Bone)
 - `target_designator`
 
-Most of these bones have issues when using them but feel free to play around with them. In this example, we will be using the `support_mg` bone as it shows good results on models.
+**Moves irratically** (Spine2 Bone)
+- `sling`
+
+Feel free to play around with these different bones by just changing the name of the vertex group after you go through this guide. Using multiple jiggle bones at once is an option too! Be sure to keep in mind which bones are the parents of jiggle bones as that may influence your choice of which bone to use.
+
+## Weighting Your Model
+
+In this example, we will be using the `support_mg` bone as it shows good results on models.
 
 You will either want to create a new vertex group named `support_mg` or simply rename an existing vertex group on your custom model if an area of the model is already weight painted to jiggle.
 
@@ -55,7 +67,7 @@ You will either want to create a new vertex group named `support_mg` or simply r
 
 ## Combining Vertex Groups
 
-If you have multiple existing vertex groups that you want to jiggle, they will need to be combined into a single group we can assign the `support_mg` name. We can do this via a `VertexWeightMix` modifier.
+If you have multiple existing vertex groups that you want to jiggle with the same bone, they will need to be combined into a single group we can assign the `support_mg` name. We can do this via a `VertexWeightMix` modifier.
 
 Add a `VertexWeightMix` modifier to your model and select the groups you wish to combine, assuring that the `Mix Mode` is set to `Add`. This will add all of the weights from group B onto group A.
 
@@ -83,7 +95,9 @@ We'll start with our anchor group completely weighted to the jiggle area at a va
 
 ![Weights Comparison](/images/jiggle-bones/weights.png)
 
+::: info
 Notice how it is completely fine to have our anchor group be weighted to more of the model. The jiggle group can be just a small section of the anchor group's area that we wish to jiggle.
+:::
 
 An easy trick to adjust the value of the jiggle group's weight is using another `VertexWeightMix` modifier. By setting both groups to our jiggle group and the `Vertex Set` to `All` we can set the `Mix Mode` to `Add`or `Subtract` depending on if we want to increase or decrease the weight of the group. Then we can change the severity of the modifier using the `Global Influence` slider.
 
