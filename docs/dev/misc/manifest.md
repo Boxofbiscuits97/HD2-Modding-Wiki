@@ -145,8 +145,3 @@ In the code we added SubOptions to the Body section so the user can choose betwe
 ::: warning
 Users can only choose one SubOption at a time.
 :::
-
-
- 
-
-_info gathered from the help sections of HD2MM and ArsenalDarthTaskil from HD2 Modding Community._

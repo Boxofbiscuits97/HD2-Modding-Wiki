@@ -8,34 +8,40 @@ description: ID Swapping in Helldivers 2 modding.
 
 ID Swapping is a powerful feature in the SDK that can be used to make one [unit](/dev/terms.html#unit) replace a completely different one.
 
+::: danger STOP
+ID swapping, as well as this guide, is superseded by the [Avatar Method](../armor%20modding/armor-swapping) of attaching units to the player avatar rig. It is NOT RECOMMENDED to use ID swapping unless absolutely necessary.
+:::
+
 **Example Use Cases:**
-* porting armors from one set to another
-* using armor parts that have additional bones that may be missing from other armors.
-    * A great example of this would be porting the SC-30 helmet over to any other helmet in the game as the SC-30 helmet is one of the only helmets that has access to neck and chest bones. This means that any helmet would be able to have a hoodie or something similar if applied correctly.
+* Porting armors from one set to another
+* Using armor parts that have additional bones that may be missing from other armors.
+
+::: info
+A great example of this would be porting the SC-30 helmet over to any other helmet in the game as the SC-30 helmet is one of the only helmets that has access to neck and chest bones. This means that any helmet would be able to have a hoodie or something similar if applied correctly.
+:::
 
 ![DP-00 head repalced with hoodie example](/images/id-swapping/11-dp-00-scout-example.png)
 
-> [!WARNING]
-> You may need to adjust your materials/textures are combined and/or hide/make pieces as some armors have less/more body parts than others.
 
->[!WARNING]
->In relation to LUTs, porting base game armors will cause the (base) to inherit the Primary LUT of the (port). If we ultimately end up modifying the B-01 in-game, we still are editing the B-01s LUTs. Since LUTs are practically unaffected by this method so we need to still modify the LUTs for whatever in-game model it’s replacing.
+::: warning
+In relation to LUTs, porting base game armors will cause the (base) to inherit the Primary LUT of the (port). If we ultimately end up modifying the B-01 in-game, we still are editing the B-01s LUTs. Since LUTs are practically unaffected by this method so we need to still modify the LUTs for whatever in-game model it’s replacing.
+:::
 
 ## Process
 >[!IMPORTANT]
 >You need the ID of the unit you want to replace. For info on acquiring that, go [here](#load-archives)
 
 #### 1. Fill in Swap ID Property
-Take an existing unit and add the ID of the unit you want it to replace in it's object properties "Z_SwapID".
+Take an existing unit and add the ID of the unit you want it to replace in it's object properties `Z_SwapID`.
 
-Fill the Z_SwapID value with the ID of the (port) unit. In this case I am using a CM-09 Connections (base) and a GS-17 Helmet (port).
+Fill the `Z_SwapID` value with the ID of the (port) unit. In this case I am using a CM-09 Connections (base) and a GS-17 Helmet (port).
 
 ![Add property](/images/id-swapping/6-add-id-number.png)
 
 >[!NOTE]
 >If the object doesn't have this property you can add it by clicking New, then the gear icon to set:
-<br>**Type:** String
-<br>**Property Name:** "Z_SwapID"
+<br>**Type:** `String`
+<br>**Property Name:** `Z_SwapID`
 ![Add property](/images/id-swapping/4-add-property.png)
 ![Add property example](/images/id-swapping/5-add-property-p2.png)
 
@@ -72,6 +78,3 @@ Once a mesh is imported, you can find the ID under `Object Properties > Custom P
 >Save the ID somewhere easily accessible.
 
 ![Find ID](/images/id-swapping/2-find-id.png)
-
-
-*info provided by ArcanePoro via [HD2 Modding Documentation Presentation](https://docs.google.com/presentation/d/12SRK-LEdf_-m37FAFdKjXsjNidpBmzUeCm9-onlEFaM)*

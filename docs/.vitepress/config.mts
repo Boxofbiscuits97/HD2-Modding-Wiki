@@ -144,7 +144,8 @@ export default defineConfig({
             {text: 'ID Swapping', link: '/dev/misc/id-swapping'},
             {text: 'Separating Patches', link: '/dev/misc/separating-patches'},
             {text: 'Rank Replacement', link: '/dev/misc/rank-replacement'},
-            {text: 'Player Card Replacement', link: '/dev/misc/player-card-replacement'}
+            {text: 'Player Card Replacement', link: '/dev/misc/player-card-replacement'},
+            {text: 'Manifests', link: '/dev/misc/manifest'}
           ]
         }
       ]
