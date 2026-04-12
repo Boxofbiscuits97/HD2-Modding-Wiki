@@ -26,6 +26,10 @@ Making the Ambient Occlusion texture fully white may give better results in game
 ### Node 2: Emissive Texture
 A multi colored RGB texture that supports multi-colored emissions.
 
+::: info
+To Change the intensity of the emission for your material, open the Material Editor in the SDK UI and edit the `TemporaryEmissionRemapRange` Variable
+:::
+
 ### Node 3: Color Texture
 
 ### Node 4: Alpha Mask
