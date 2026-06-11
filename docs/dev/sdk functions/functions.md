@@ -28,6 +28,12 @@ GitHub to the HD2 SDK releases.
 
 Loads the base game archive `9ba626afa44a3aa3` into the SDK.
 
+### Avatar Icon
+
+![avatar-icon-preview](/images/sdk-functions/avatar-icon.png)
+
+Imports the Helldiver player avatar armature rig into the scene.
+
 ### Search Found Archives
 
 ![search-found-archives-preview](/images/sdk-functions/search-found-archives.png)
