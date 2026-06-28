@@ -58,7 +58,7 @@ With Armor B highlighted, we can delete it, leaving only Armor A mesh, but with 
 
 ![After Z_ObjectID](/images/armor-swapping/After-ZObjectID.png)
 
-## Wighted Normal Modifier (Extra Step)
+## Weighted Normal Modifier (Extra Step)
 
 This really applies to HD2 assets imported via the SDK, but still good to know.
 
